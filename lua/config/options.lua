@@ -1,9 +1,11 @@
+-- Options are automatically loaded before lazy.nvim startup
+-- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
+-- Add any additional options here
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
-
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -18,7 +20,7 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
